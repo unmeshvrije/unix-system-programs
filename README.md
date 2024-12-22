@@ -5,4 +5,5 @@ Some programs are inspired from the book "The Design of the unix operating syste
 # Contribution
 
 If you want to contribute, please make a folder with your name and add C programs in your folder before committing.
-Please do not commit, object files, binaries, sensitive information like passwords, private keys, or emails.
+Please do not commit object files, binaries, sensitive information like passwords, private keys, or emails etc.
+Please do not commit large files (PDFs or audio/videos)

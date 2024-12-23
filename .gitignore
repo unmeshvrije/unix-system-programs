@@ -2,11 +2,8 @@
 *.out
 *.bin
 *.exe
-a.out
-fork
-hex
-hex_copy
-hex_copy2
-if
-mycopy
-myls
+ashwathama
+bash_gitignore.sh
+ior
+pid
+sync

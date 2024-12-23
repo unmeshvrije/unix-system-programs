@@ -1,0 +1,17 @@
+README.md
+all_files.txt
+ashwathama
+bash_gitignore.sh
+ext_ignore.txt
+fork.c
+hex.c
+if.c
+infinite_loop.c
+list_files.c
+mycopy.c
+myls.c
+pid
+pid.c
+sync
+sync.c
+unix-prospective-students.txt

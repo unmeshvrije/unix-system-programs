@@ -4,7 +4,10 @@
 *.exe
 ashwathama
 bash_gitignore.sh
+endian
 garibsh
 ior
+myps
 pid
 sync
+threads

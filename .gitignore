@@ -2,6 +2,7 @@
 *.out
 *.bin
 *.exe
+*.txt
 ashwathama
 bash_gitignore.sh
 endian
@@ -9,5 +10,8 @@ garibsh
 ior
 myps
 pid
+reader
+run_writer_readers.sh
 sync
 threads
+writer

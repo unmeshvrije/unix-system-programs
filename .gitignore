@@ -3,12 +3,16 @@
 *.bin
 *.exe
 *.txt
+a.out
 ashwathama
 bash_gitignore.sh
 endian
 garibsh
 ior
+mychdir
+mychroot
 myps
+mystat
 pid
 reader
 run_writer_readers.sh

@@ -1,13 +1,4 @@
-#include<stdio.h>
-#include<unistd.h>
-#include<stdlib.h>
-#include<signal.h>
-static void sig_alrm(int signo)
-{
-   // nothing to do , just returning wake up sigsuspend()
-}
-
-unsigned int sleep(unsigned int nsecs)
+unsigned int my_sleep(unsigned int nsecs)
 {
     struct sigaction newact,oldact;
     sigset_t newmask,oldmask,suspmask;
@@ -38,6 +29,6 @@ unsigned int sleep(unsigned int nsecs)
 int main()
 {
     printf("before");
-    sleep(4000);
+    my_sleep(4000);
     printf("after ");
 }

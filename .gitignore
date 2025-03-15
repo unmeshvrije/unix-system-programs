@@ -6,7 +6,10 @@
 a.out
 ashwathama
 bash_gitignore.sh
+context
+copro
 endian
+forks
 garibsh
 ior
 mychdir
@@ -14,8 +17,10 @@ mychroot
 myps
 mystat
 pid
+pipe
 reader
 run_writer_readers.sh
+sbrk
 sync
 threads
 writer

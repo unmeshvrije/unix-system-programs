@@ -6,12 +6,15 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <sys/signal.h>
+#include <time.h>
+
+void wakeup()
+{
+  printf("Waking up...\n");
+}
 
 int main(int argc, char *argv[])
 {
-    extern unsigned int alarm(unsigned int seconds);
-    extern void wakeup();
-
     struct stat statbuf;
     time_t axtime;
 
@@ -34,17 +37,15 @@ int main(int argc, char *argv[])
         }
         if(axtime != statbuf.st_atime)
         {
-            printf("File %s accessed\n", argv[1]);
+            printf("File %s accessed at %s\n", argv[1], ctime(&axtime));
             axtime = statbuf.st_atime;
         }
 
         signal(SIGALRM, wakeup); /* reset for alaram */
-        alarm(60);
+        alarm(30);
         pause(); /* sleep until signal */
     }
 
     return 0;
 }
 
-void wakeup()
-{}

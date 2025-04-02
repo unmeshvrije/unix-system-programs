@@ -3,7 +3,6 @@
 #include <unistd.h>
 #include <sys/wait.h>
 #include <sys/times.h>
-extern long times();
 
 // function declarations
 void child(int n);
@@ -41,7 +40,7 @@ void child(int n)
     long t1, t2;
 
     t1 = times(&cb1);
-    for(i = 0; i < 10000; i++)
+    for(i = 0; i < 1000000000; i++)
         ;
 
     t2 = times(&cb2);
